@@ -22,9 +22,9 @@ Jangan gunakan kata kunci bawaan Python
 
 # Membuat variabel dan memasukan nilai
 nama_lengkap = "Budi"   # String (Teks, diapit kutip tunggal ' atau ganda ")
-umur = 18               # Integer (Bilangan bualt)
+umur = 18               # Integer (Bilangan bulat)
 berat_badan = 65.3      # Float (Bilangan desimal, gunakan titik bukan kome)
-sudah_lulus = True      # Boolean (Wajib diawali huruf kapital: True atua False)
+sudah_lulus = True      # Boolean (Wajib diawali huruf kapital: True atau False)
 
 print("Namaku",nama_lengkap, "Umurku", umur,"tahun", "\nBerat badanku", berat_badan)
 

@@ -1,4 +1,9 @@
-# List 
+"""
+List: Kumpulan data terurut (ordered), nilainya bisa diubah(mutable),
+dan mengizinkan adanya elemen duplikat. 
+
+Didefinisikan menggunakan kurung siku [].
+"""
 
 # 1. Membuat List (bisa berisi tipe data campuran)
 keranjang = ["Apel", 42, 3.14, True]

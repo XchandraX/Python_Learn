@@ -1,3 +1,10 @@
+"""
+Tuple: Kumpulan data terurut (ordered), namun bersifat immutable
+(nilainya tidak dapt diubah setelah didefinisikan).
+Didefinisikan menggunakan kurung biasa ().
+
+"""
+
 # Membuat tuple
 
 warna = ("Merah", "Hijau", "Biru")

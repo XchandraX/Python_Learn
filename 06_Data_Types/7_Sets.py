@@ -1,6 +1,7 @@
 """
-SET
-
+SET: (himpunan) di Python adalah koleksi data tak terurut (unordered) 
+yang tidak mengizinkan elemen duplikat.
+Didefinisikan menggunakan kurung biasa {}
 """
 
 ## Membuat Set
@@ -20,19 +21,19 @@ set_kosong = set()
 
 ## Menambah and Menghapus Elemen
 
-keranjanag = {"Apel", "Mangga"}
-print(keranjanag)
+keranjang = {"Apel", "Mangga"}
+print(keranjang)
 # Menambah elemen
-keranjanag.add("Jeruk")
-print(keranjanag)
+keranjang.add("Jeruk")
+print(keranjang)
 
 # Menghapus elemen (Menghasilkan error jika elemen tidak ada)
-keranjanag.remove("Apel")
-print(keranjanag)
+keranjang.remove("Apel")
+print(keranjang)
 
 # Menghapus elemen dengan aman (tidak error jika elemen tidak ada)
-keranjanag.discard("Pisang")
-print(keranjanag)
+keranjang.discard("Pisang")
+print(keranjang)
 
 ## Operasi Matematika Himpunan
 
