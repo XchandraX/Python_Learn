@@ -5,7 +5,7 @@ membuka file yg tidak ada, atau memasukkan huruf saat program meminta angka.
 """
 
 """
-Jika exception tidak ditangani, program akan langusng terhenti(crash) dan menampilkan pesan error merah/kuning.
+Jika exception tidak ditangani, program akan langsung terhenti(crash) dan menampilkan pesan error merah/kuning.
 Untuk mencegah hal ini dan membuat program gagal secara anggun(fail gracefully),
 Python menggunakan struktur blok `try`, `except`, `else` dan `finally`.
 """
@@ -16,21 +16,21 @@ Python menggunakan struktur blok `try`, `except`, `else` dan `finally`.
     Jika terjadi error, eksekusi di blok ini langsung dihentikan dan dilempar ke blok except.
 
 *except: Blok yang berfungsi sebagai "jaring pengaman". 
-    Kode di sini hanay akan dijalankan jika terjadi error di dlaam blok try.    
+    Kode di sini hanya akan dijalankan jika terjadi error di dalam blok try.    
 
 *else: Blok opsional yang hanya dijalankan jika kode di block try 
-    berhasil dieksekui tanpa ada error sama sekali
+    berhasil dieksekusi tanpa ada error sama sekali
 
-*finally: Blok opsional yang selalu dieksekusi apda akhir proses, tidak peduli apakah 
+*finally: Blok opsional yang selalu dieksekusi pada akhir proses, tidak peduli apakah 
     terjadi error atau tidak. Ini sangat berguna untuk "bersih-bersih"
-    (misalnya menututp file atau memutuskan koneksi database).
+    (misalnya menutup file atau memutuskan koneksi database).
 """
 
 # Contoh Penggunaan Lengkap
 
 try:
     # Meminta input dari pengguna dan mencoba melakukan pembagian
-    angka = input("Mesukkan angka pembagi untuk 100: ")
+    angka = input("Masukkan angka pembagi untuk 100: ")
     pembagi = int(angka)
     hasil = 100 / pembagi
 
@@ -46,7 +46,7 @@ except ZeroDivisionError:
 except Exception as e:
     print(f"Terjadi erro yang tidak diketahui: {e}")
 
-# Dieksekudi hanya jika TIDAK ADA error di blok try
+# Dieksekusi hanya jika TIDAK ADA error di blok try
 else:
     print(f"Perhitungan sukses! Hasilnya adalah {hasil}")
 
