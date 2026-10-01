@@ -8,8 +8,8 @@
     - [x] Input/output dasar (`pint()`, `input()`)
     - [x] Struktur kontrol: `if`, `elif`, `else`
     - [x] Perulangan: `for`, `while`
-    - [ ] Fungsi (`def`, parameter, return value)
-    - [ ] Modul & Import
+    - [x] Fungsi (`def`, parameter, return value)
+    - [x] Modul & Import
     
 - Tahan 2 -- Struktur Data
     - [ ] List, Tuple, Dictionary, Set
