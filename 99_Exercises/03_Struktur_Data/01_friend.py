@@ -4,7 +4,7 @@
 teman = ["Alex", "Tsuki", "Lumi", "Devin", "Natsuki"]
 
 print(teman[0])
-print(teman[3])
-print(teman[2])
 print(teman[-1])
-print(teman[1])
+
+teman.sort()
+print(teman)
