@@ -47,6 +47,37 @@ class LilnkedList:
         ## Geser posisi Head ke node yang baru
         self.head = node_baru
 
+    def delete_node(self, nilai):
+
+        ## Jika list kosong, tidak ada yang bisa dihapus
+        if self.head is Node:
+            print("List kosong!")
+            return
+
+        ## Jika elemen yang ingin dihapus adalah Head (eleemn pertama)
+        if self.head.data == nilai:
+            self.head = self.head.next # Geser Head ke elemen kedua
+            return
+
+        ## Mencari elemen di tengah atau ujung list
+        ## Kita menggunakana dua pointer: 'saat_ini' dan akan mengecek 'saat_ini.next'
+        saat_ini = self.head
+
+        while saat_ini.next is not None:
+            ## Jika eleemn berikuktnya adalah elemen yang ingin dihapus
+            if saat_ini.next.data == nilai:
+                ## Bypass (langkahi) eleemn yang dihapus
+                ## Sembungkan pionter langusng ke eleemn setelahnya
+                saat_ini.next = saat_ini.next.next
+                return # Keluar dar ifungsi setelah berhasil menghapus
+
+            ## Pintar ke node berikutnya
+            saat_ini = saat_ini.next
+
+        ## jika loop selesai tapi nilai tidak ditemukan
+        print(f"Nilai {nilai} tidak ditemukan dalam Linked List.")
+
+
     ## Menampilkan semua elemen Linked List
     def tampilakan(self):
         elemen = []
@@ -59,6 +90,7 @@ class LilnkedList:
 
 
         print(" -> ".join(elemen) + " -> None")
+
 
 # Cara Menggunakan Linked List
 
@@ -76,6 +108,12 @@ print("Setelah ditambah di belakang:")
 my_list.tampilakan()
 ## Output: 10 -> 35 -> 50 -> None
 
+# Menghapus elemen di tengah
+my_list.delete_node(35)
+print("\nSetelah menghapus 35:")
+my_list.tampilakan()
+## Output: 10 -> 50 -> None
+
 ## Menambahkan elemen di awal (Prepend)
 my_list.tambah_depan(5)
 my_list.tambah_depan(1)
@@ -83,5 +121,14 @@ my_list.tambah_depan(1)
 # Menampilkan kondisi setelah Prepend 
 print("\nSetelah ditambah di depan:")
 my_list.tampilakan()
-## Output: 1 -> 5 -> 10 -> 35 -> 50 -> None
+## Output: 1 -> 5 -> 10 -> 50 -> None
 
+# Menghapus elemen di Head (Pertama)
+my_list.delete_node(1)
+print("\nSetelah menghapus 1 (Head):")
+my_list.tampilakan()
+## Output: 5 -> 10 -> 50 -> None
+
+# Mencoba menghapus elemen yang tidak ada
+my_list.delete_node(99)
+# Output: Nilai 99 tidak ditemukan dalam Linked List.
