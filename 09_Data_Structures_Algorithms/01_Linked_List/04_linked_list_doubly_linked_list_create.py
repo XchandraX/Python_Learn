@@ -94,12 +94,12 @@ class DoublyLinkedList:
 
         ## Bypass koneksi maju: Pointer 'next' elemen SEBELUMNYA menunjuk ke elemen SESUDAHNYA
         if saat_ini.prev is not None:
-            saat_ini.prev.next - saat_ini.next
+            saat_ini.prev.next = saat_ini.next
 
         ## Bypass koneksi mundur: Poniter 'prev' elemen SEDUDAHNYA menunjuk ke elemen SEBELUMNYA
         ## Pengecekan ini memastikan error tidak terjadi jika elemen yg dihapus adalah Tail
         if saat_ini.next is not None:
-            saat_ini.next.prev - saat_ini.next
+            saat_ini.next.prev = saat_ini.prev
 
 # Cara menggunakan Doubly Linked List
 

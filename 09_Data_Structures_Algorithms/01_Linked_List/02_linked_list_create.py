@@ -16,7 +16,7 @@ class Node:
         self.next = None    ## Saat node baru dibuat, ia belum menunjuk ke mana-pun (None)
 
 
-class LilnkedList:
+class LinkedList:
     def __init__(self):
         self.head = None    ## Titik awal Linked List. Saat baru dibuat, list masih kosong.
         
@@ -95,7 +95,7 @@ class LilnkedList:
 # Cara Menggunakan Linked List
 
 ## Membuat objek Linked List baru
-my_list = LilnkedList()
+my_list = LinkedList()
 
 # Menambahkan elem di akhir
 my_list.tambah_belakang(10)
