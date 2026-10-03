@@ -19,7 +19,7 @@ print(hasil)
 ## Jika Anda melakukan ini Python TETAP akan menjalankannya tanpa error saat runtime,
 ## teatpi IDE atau linter (seperti mypy) akan memberi garis bawah merah/peringatan.
 hasil_salah = tambah("10", "5")
-print(hasil)
+print(hasil_salah)
 
 
 # Anotasi pada Variable Dasar
