@@ -49,4 +49,4 @@ Repositori ini berisi catatan, latihan, dan mini project selama saya mempelajari
 - [ ] Multithreading/Multiprocessing dasar
 - [ ] Virtual Environment (`venv`) & Package Management (`pip`, `poetry`)
 
-### 🏆 Tahap 6 — Spedialisasi
+### 🏆 Tahap 6 — Spesialisasi
