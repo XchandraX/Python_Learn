@@ -14,12 +14,11 @@
 
 - Leaf (Daun)       : Node paling ujung bawah yang sudah tidak memiliki anak lagi.
 
-### Struktur Data Tree
-https://share.gemini.google/cBWcQJxbdhLQ
+### [Struktur Data Tree] (Struktur_Data_Tree.html)
 
 ## Binary Tree (Pohon Biner)
 Binary Tree adlaah jenis Tree khusus dan yang paling sering digunakan dalam pemrograman. 
 Aturannya sangat ketat namun sederhana: Setiap Node maksimal hanya boleh memiliki DUA anak (sering disebut sebagai anak kiri (Left Child) dan anak kanan (Right Child)).
 
-Beberapa algoritma pencarian tercepat (seperti Binary Search Tree) bergantung pada struktur ini karena kemampuannya membagi data menjadi dua bagian di setiap cabangnya, membuat proses pencarian data O(log n) sangat efisien.
+Beberapa algoritma pencarian tercepat (seperti Binary Search Tree) bergantung pada struktur ini karena kemampuannya membagi data menjadi dua bagian di setiap cabangnya, membuat proses pencarian data `O(log n)` sangat efisien.
 
