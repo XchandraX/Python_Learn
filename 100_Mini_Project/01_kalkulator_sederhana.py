@@ -25,7 +25,7 @@ print("    Masukkan Angka Pertama:   ")
 print("==============================")
 while True:
     try:
-        angka_A = int(input(""))
+        angka_A = float(input(""))
         break
     except ValueError:
         print('"Masukkan Angka yang Valid untuk angka pertama!!"')
@@ -48,7 +48,7 @@ print("     Masukkan Angka Kedua:    ")
 print("==============================")
 while True:
     try:
-        angka_B = int(input(""))
+        angka_B = float(input(""))
         break
     except ValueError:
         print('"Masukkan Angka yang Valid untuk angka kedua!!"')
@@ -62,29 +62,29 @@ while True:
 # FUNGSI OPERASI
 #########################
 
-def tambah():
-    hasil = angka_A + angka_B
+def tambah(a, b):
+    hasil = a + b
     return hasil
 
-def kurang():
-    hasil = angka_A - angka_B
+def kurang(a, b):
+    hasil = a - b
     return hasil
 
-def kali():
-    hasil = angka_A * angka_B
+def kali(a, b):
+    hasil = a * b
     return hasil
 
-def bagi():
+def bagi(a, b):
     try:
-        hasil = angka_A / angka_B
+        hasil = a / b
     except ZeroDivisionError: 
         return ("Angka Nol Tidak bisa bagi")
     else:
         return hasil
     
-def sisa_bagi():
+def sisa_bagi(a, b):
     try:
-        hasil = angka_A % angka_B
+        hasil = a % b
     except ZeroDivisionError: 
         return ("Angka Nol Tidak bisa bagi")
     else:
@@ -104,26 +104,26 @@ if operasi not in ["All"]:
     print(f"        HASIL OPERATOR:      ")
     print("==============================")
     if operasi == "+":
-        print(f"Tambah    : {tambah()}")
+        print(f"Tambah    : {tambah(angka_A, angka_B)}")
     elif operasi == "-":
-        print(f"Kurang    : {kurang()}")
+        print(f"Kurang    : {kurang(angka_A, angka_B)}")
     elif operasi == "*":
-        print(f"Kali      : {kali()}")
+        print(f"Kali      : {kali(angka_A, angka_B)}")
     elif operasi == "/":
-        print(f"Bagi      : {bagi()}")
+        print(f"Bagi      : {bagi(angka_A, angka_B)}")
     elif operasi == "%":
-        print(f"Sisa Bagi : {sisa_bagi()}")
+        print(f"Sisa Bagi : {sisa_bagi(angka_A, angka_B)}")
 
 else:
     print("\n==============================")
     print("     HASIL SEMUA OPERATOR:    ")
     print("==============================")
     print(
-f"""Hasil Tambah adalah: {tambah()}
-Hasil Kurang : {kurang()}
-Hasil Kali   : {kali()}
-Hasil Bagi   : {bagi()}
-Sisa  Bagi   : {sisa_bagi()}""")
+f"""Hasil Tambah adalah: {tambah(angka_A, angka_B)}
+Hasil Kurang : {kurang(angka_A, angka_B)}
+Hasil Kali   : {kali(angka_A, angka_B)}
+Hasil Bagi   : {bagi(angka_A, angka_B)}
+Sisa  Bagi   : {sisa_bagi(angka_A, angka_B)}""")
 
 #########################
 # HASIL (END)

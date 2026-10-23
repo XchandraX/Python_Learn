@@ -12,7 +12,7 @@ while True:
     pilihan = input("\nMasukkan Menu(1-5): ").lower()
 
     match pilihan:
-        case "Menu":
+        case "menu":
             print("1. Tambah Tugas")
             print("2. Lihat Tugas")
             print("3. Tandai Selesai")

@@ -15,14 +15,18 @@ while True:
     if nama.lower() in ["selesai","end"]:
         print("Input selesai, TerimaKasih")
         break
+    while True:
+        # Masukkan nilai, jika nilai valid, looping
+        try:
+            nilai = int(input("Masukkan Nilai Mahasiswa: "))
 
-    # Masukkan nilai, jika nilai valid, looping
-    try:
-        nilai = int(input("Masukkan Nilai Mahasiswa: "))
-    except ValueError:
-        print("Masukkan Angka yang valid")
-        print("-----------------------")
-        continue
+            if not (0 <= nilai <= 100):
+                print("Nilai harus 0-100")
+                continue
+
+            break
+        except ValueError:
+            print("Masukkan Angka yang valid")
 
     # Jika nilai "n" jadikan grade "n"
     if nilai >= 85:

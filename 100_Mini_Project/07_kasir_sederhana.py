@@ -11,7 +11,11 @@ def tambah_barang():
     while True:
         # --- Input Nama ---
         nama = input("Nama Barang: ").strip()
-
+        
+        if not nama:
+            print("Nama barang tidak boleh kosong!\n")
+            continue
+        
         if nama.lower() in ["exit", "selesai"]:
             break
 
@@ -28,7 +32,7 @@ def tambah_barang():
         # --- Input Qty ---
         try:
             qty = int(input("Jumlah Barang: "))
-            if qty < 0:
+            if qty <= 0:
                 print("Jumlah tidak boleh negatif!\n")
                 continue
         except ValueError:

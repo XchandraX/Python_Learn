@@ -40,7 +40,7 @@ while True:
                 setor = int(input("Masukkan Jumlah Yang Ingin di Setorkan: "))        
                 saldo = saldo + setor
                 print(f"Hasil Setor Saldo: {saldo:,}")
-                if tarik <= 0:
+                if setor <= 0:
                     print("Tidak Boleh Bawah angka 0!!")
                     continue
             except ValueError:
