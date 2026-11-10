@@ -1,0 +1,2 @@
+# List Comprehensions
+List Comprehension adalah cara Pythonic untuk membuat list baru berdasarkan iterable yang sudah ada hanya dalam satu baris. Ini menggantikan `for loop` tradisional yang memakan banyak baris kode
